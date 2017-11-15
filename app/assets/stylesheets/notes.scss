@@ -1,0 +1,43 @@
+// Place all the styles related to the Notes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.post-it {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(#FFF8C2, #FFE960);
+  position: relative;
+  margin: 0 auto;
+  border-radius: 10px;
+  &--square {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    bottom: 0px;
+    right: 0px;
+    background: #FFE960;
+    border-radius: 10px;
+    box-shadow: -2px -2px 15px -4px grey;
+    &__top {
+      border-top-left-radius: 10px;
+      border-top: 50px solid #FBF1A7;
+      border-left: 50px solid #FBF1A7;
+      border-right: 50px solid transparent;
+      border-bottom: 50px solid transparent;
+    }
+  }
+}
+
+.new_note {
+  padding: 20px;
+  .field {
+    input, textarea {
+      padding: 10px;
+      width: 100%;
+      box-sizing: border-box;
+      border-radius: 5px;
+      border: 1px solid gray;
+      outline: 0px;
+      font-size: 16px;
+    }
+  }
+}

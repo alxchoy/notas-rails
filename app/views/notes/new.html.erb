@@ -1,0 +1,12 @@
+<h1>New Note</h1>
+
+<div class="post-it">
+  <%= render 'form', note: @note %>
+  <div class="post-it--square">
+    <div class="post-it--square__top"></div>
+  </div>
+</div>
+
+
+
+<%= link_to 'Back', notes_path %>
