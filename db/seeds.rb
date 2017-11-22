@@ -5,3 +5,24 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Note.delete_all
+
+Note.create(
+  title: 'Libro de ruby on rails',
+  link: 'https://www.railstutorial.org/book',
+  color: 'red'
+)
+
+
+Note.create(
+  title: 'Libro de Django',
+  link: 'https://djangobook.com/',
+  color: 'green'
+)
+
+Note.create(
+  title: 'Libro de Laravel',
+  link: 'https://www.gitbook.com/book/ajgallego/laravel-5/details',
+  color: 'pink'
+)

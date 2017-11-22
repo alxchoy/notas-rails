@@ -13,16 +13,16 @@
 
   <div class="field">
     <div class="field__icon"></div>
-    <%= f.text_field :title %>
+    <%= f.text_field :title, placeholder: 'Ingresa un título para tu nota' %>
   </div>
 
   <div class="field">
-    <%= f.label :link %>
-    <%= f.text_field :link %>
+    <div class="field__icon"></div>
+    <%= f.text_field :link, placeholder: 'Ingresa el link que deseas guardar' %>
   </div>
 
   <div class="field">
-    <%= f.label :color %>
+    <%= f.label :"Elije un color para tu nota" %>
     <%= f.text_field :color %>
   </div>
 

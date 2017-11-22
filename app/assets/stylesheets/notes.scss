@@ -1,43 +1,115 @@
 // Place all the styles related to the Notes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.post-it {
-  width: 500px;
-  height: 500px;
-  background: radial-gradient(#FFF8C2, #FFE960);
-  position: relative;
-  margin: 0 auto;
-  border-radius: 10px;
-  &--square {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    bottom: 0px;
-    right: 0px;
-    background: #FFE960;
+/*.create-note {
+  h1 {
+    text-align: center;
+    padding: 20px 0px;
+    margin: 40px 0px;
+  }
+  .post-it {
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(#FFF8C2, #FFE960);
+    position: relative;
+    margin: 0 auto;
     border-radius: 10px;
-    box-shadow: -2px -2px 15px -4px grey;
-    &__top {
-      border-top-left-radius: 10px;
-      border-top: 50px solid #FBF1A7;
-      border-left: 50px solid #FBF1A7;
-      border-right: 50px solid transparent;
-      border-bottom: 50px solid transparent;
+    &--square {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      bottom: 0px;
+      right: 0px;
+      background: #FFE960;
+      border-radius: 10px;
+      box-shadow: -2px -2px 15px -4px grey;
+      &__top {
+        border-top-left-radius: 10px;
+        border-top: 50px solid #FBF1A7;
+        border-left: 50px solid #FBF1A7;
+        border-right: 50px solid transparent;
+        border-bottom: 50px solid transparent;
+      }
+    }
+  }
+
+  .new_note {
+    padding: 20px;
+    .field {
+      position: relative;
+      margin: 20px 0px;
+      &__icon {
+        position: absolute;
+        width: 60px;
+        top: 0px;
+        bottom: 0px;
+        background: red;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        background: #B08010;
+      }
+      input {
+        padding: 15px 10px;
+        padding-left: 70px;
+        width: 100%;
+        box-sizing: border-box;
+        border-radius: 5px;
+        border: 1px solid gray;
+        outline: 0px;
+        font-size: 16px;
+        &#note_color {
+          margin-top: 10px;
+          padding-left: 10px;
+        }
+      }
+    }
+    input[type='submit'] {
+      cursor: pointer;
+      font-size: 16px;
+      padding: 15px 20px;
+      border-radius: 5px;
+      border: none;
+      outline: 0;
+      background: #B08010;
+      color: #fff;
     }
   }
 }
 
-.new_note {
-  padding: 20px;
-  .field {
-    input, textarea {
-      padding: 10px;
-      width: 100%;
-      box-sizing: border-box;
-      border-radius: 5px;
-      border: 1px solid gray;
-      outline: 0px;
-      font-size: 16px;
+.list-notes {
+  max-width: 1200px;
+  h1 {
+    text-align: center;
+    padding: 20px 0px;
+    margin: 40px 0px;
+  }
+  .note {
+    ul {
+      padding: 0px;
+      margin: 0px;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    li {
+      list-style: none;
+      padding: 20px;
+      width: 250px;
+      height: 250px;
+      background: gray;
+      margin: 10px 0px;
+      & > div {
+        position: relative;
+        height: 100%;
+      }
+    }
+    h3 {
+      font-size: 20px;
+      margin: 0px;
+    }
+    &-actions {
+      position: absolute;
+      bottom: 0px;
     }
   }
-}
+}*/
