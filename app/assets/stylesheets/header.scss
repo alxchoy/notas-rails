@@ -1,0 +1,18 @@
+.navbar {
+  padding: 10px 60px;
+  justify-content: space-between;
+  &-collapse {
+    width: inherit !important;
+    ul {
+      margin-right: 0px !important;
+      li {
+        a {
+          color: rgba(255, 255, 255, 0.8) !important;
+          &:hover {
+            color: rgba(255, 255, 255, 1) !important;
+          }
+        }
+      }
+    }
+  }
+}
