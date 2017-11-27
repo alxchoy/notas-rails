@@ -1,0 +1,46 @@
+.user-form {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  margin: 0 auto;
+  h2 {
+    margin-bottom: 50px;
+  }
+  .field {
+    margin: 20px 0px;
+    label {
+      margin-bottom: 0.3rem;
+    }
+    input {
+      width: 100%;
+      margin-top: 5px;
+      padding: 5px;
+      &[type="checkbox"] {
+        width: inherit;
+        margin-top: 6px;
+      }
+    }
+  }
+  .actions {
+    input {
+      padding: 5px 15px;
+      background: #684c1a;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+  }
+  .login {
+    margin-top: 15px;
+    a {
+      color: #684c1a;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+  }
+  &.login {
+    top: 40%;
+  }
+}

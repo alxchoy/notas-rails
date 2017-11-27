@@ -1,10 +1,12 @@
 class NotesController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_note, only: [:show, :edit, :update, :destroy]
 
   # GET /notes
   # GET /notes.json
   def index
-    @notes = Note.all
+    @user = User.find(current_user.id)
+    @notes = @user.notes
   end
 
   # GET /notes/1
@@ -25,11 +27,12 @@ class NotesController < ApplicationController
   # POST /notes.json
   def create
     @note = Note.new(note_params)
+    @note.user_id = current_user.id
 
     respond_to do |format|
       if @note.save
-        format.html { redirect_to @note, notice: 'Note was successfully created.' }
-        format.json { render :show, status: :created, location: @note }
+        format.html { redirect_to notes_path, notice: 'Tu nota fue creada' }
+        format.json { render :index, status: :created, location: @note }
       else
         format.html { render :new }
         format.json { render json: @note.errors, status: :unprocessable_entity }

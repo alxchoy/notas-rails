@@ -6,9 +6,8 @@
         <li>
           <h3><%= link_to "#{note.title}", note.link, target: '_blank' %></h3>
           <div class="note-actions">
-            <span><%= link_to 'Show', note %></span>
             <span><%= link_to 'Edit', edit_note_path(note) %></span>
-            <span><%= link_to 'Destroy', note, method: :delete, data: { confirm: 'Are you sure?' } %></span>
+            <span><%= link_to 'Destroy', note, method: :delete, data: { confirm: '¿Estas seguro de querer eliminar tu nota?' } %></span>
           </div>
         </li>
       <% end %>
